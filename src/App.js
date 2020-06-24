@@ -1,13 +1,31 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function Homepage() {
   return (
     <div className="App">
-      <h1>My React App</h1>
-      <h2>Author: Soph32</h2>
+      <Title />
+      <NavBar />
     </div>
   );
 }
 
-export default App;
+function Title() {
+  return (
+    <div>
+      <h1>React App</h1>
+    </div>
+  );
+}
+
+function NavBar() {
+  return (
+    <div className="nav-bar">
+      <a href='#'>About</a>
+      <a href='#'>Blog</a>
+      <a href='#'>Projects</a>
+    </div>
+  );
+}
+
+export default Homepage;
