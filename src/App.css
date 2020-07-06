@@ -1,6 +1,4 @@
 body {
-  color: #333333;
-  /* margin: 2rem; */
   font-family: Trebuchet MS, Verdana, Geneva, sans-serif;
 }
 
@@ -15,10 +13,14 @@ body {
   z-index: -1;
 }
 
-h1 {
-  color: black;
-  font-size: 3rem;
-  margin-top: -1rem;
+.nav-bar{
+  float: right;
+  margin-right: 1rem;
+}
+
+.title {
+  color: white;
+  margin-left: 1rem;
 }
 
 a {
@@ -31,16 +33,24 @@ a {
 
 a:hover,
 a:focus {
-  background-color: orange;
+  color: pink;
+}
+
+.main-text {
+  color: white;
+  margin: 1rem;
+}
+
+#first-main-text {
+  margin-left: 30%;
+}
+#second-main-text {
+  margin-left: 40%;
+}
+#third-main-text {
+  margin-left: 50%;
 }
 
 .code {
   font-family: "Courier New", Courier, monospace;
-}
-
-.nav-bar{
-  background-color: #333333;
-  display: block;
-  height: 3rem;
-  width: 100%;
 }
