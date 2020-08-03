@@ -4,9 +4,11 @@ import './App.css';
 
 function Homepage() {
   return (
-    <div>
+    <div className="section-container">
       <MainText />
       <Skills />
+      <WorkExperience />
+      <Education />
     </div>
   );
 }
@@ -24,6 +26,24 @@ function MainText() {
 }
 
 function Skills() {
+  return (
+    <section>
+      <div>
+      </div>
+    </section>
+  )
+}
+
+function WorkExperience() {
+  return (
+    <section>
+      <div>
+      </div>
+    </section>
+  )
+}
+
+function Education() {
   return (
     <section>
       <div>
