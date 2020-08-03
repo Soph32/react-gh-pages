@@ -1,6 +1,7 @@
 body {
   font-family: Trebuchet MS, Verdana, Geneva, sans-serif;
   background: #101820FF;
+  overflow: hidden;
 }
 
 h1 {
@@ -8,8 +9,21 @@ h1 {
   font-size: 3rem;
 }
 
+h3 {
+  bottom: 0;
+  color: #A59C94FF;
+  font-size: small;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.scroll {
+  margin-bottom: 2rem;
+}
+
 .main-text {
-  left: 38%;
+  left: 40%;
   line-height: 200px;
   margin-top: -150px;
   position: absolute;

@@ -1,10 +1,12 @@
 import React from 'react';
+import Scroll from './scroll';
 import './App.css';
 
 function Homepage() {
   return (
     <div>
       <MainText />
+      <Scroll />
     </div>
   );
 }
