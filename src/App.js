@@ -7,7 +7,7 @@ function Homepage() {
     <div className="section-container">
       <MainText />
       <Skills />
-      <WorkExperience />
+      <Experience />
       <Education />
     </div>
   );
@@ -28,18 +28,16 @@ function MainText() {
 function Skills() {
   return (
     <section>
-      <div>
-      </div>
-      <Scroll toSection="Work Experience"/>
+      <h1 className="section-title" id="skills">Skills</h1>
+      <Scroll toSection="Experience"/>
     </section>
   )
 }
 
-function WorkExperience() {
+function Experience() {
   return (
     <section>
-      <div>
-      </div>
+      <h1 className="section-title" id="experience">Experience</h1>
       <Scroll toSection="Education"/>
     </section>
   )
@@ -48,8 +46,7 @@ function WorkExperience() {
 function Education() {
   return (
     <section>
-      <div>
-      </div>
+      <h1 className="section-title" id="education">Education</h1>
     </section>
   )
 }
