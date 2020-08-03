@@ -6,17 +6,29 @@ function Homepage() {
   return (
     <div>
       <MainText />
-      <Scroll />
+      <Skills />
     </div>
   );
 }
 
 function MainText() {
   return (
-    <div  className="main-text">
-      <h1 className="hi">Hi, I'm</h1>
-      <h1 className="name">Sophie</h1>
-    </div>
+    <section>
+      <div  className="main-text">
+        <h1 className="hi">Hi, I'm</h1>
+        <h1 className="name">Sophie</h1>
+      </div>
+      <Scroll />
+    </section>
+  )
+}
+
+function Skills() {
+  return (
+    <section>
+      <div>
+      </div>
+    </section>
   )
 }
 

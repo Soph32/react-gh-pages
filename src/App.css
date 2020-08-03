@@ -1,7 +1,6 @@
 body {
   font-family: Trebuchet MS, Verdana, Geneva, sans-serif;
-  background: #101820FF;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -13,9 +12,22 @@ h3 {
   bottom: 0;
   color: #A59C94FF;
   font-size: small;
+  left: 0;
   position: absolute;
   text-align: center;
   width: 100%;
+}
+
+section {
+  height: calc(100vh - 14em);
+  padding: 7em;
+}
+
+section:nth-of-type(1) {
+  background: #101820FF;
+}
+section:nth-of-type(2) {
+  background: #AE0E36FF;
 }
 
 .scroll {
