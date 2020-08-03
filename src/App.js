@@ -20,7 +20,7 @@ function MainText() {
         <h1 className="hi">Hi, I'm</h1>
         <h1 className="name">Sophie</h1>
       </div>
-      <Scroll />
+      <Scroll toSection="Skills"/>
     </section>
   )
 }
@@ -30,6 +30,7 @@ function Skills() {
     <section>
       <div>
       </div>
+      <Scroll toSection="Work Experience"/>
     </section>
   )
 }
@@ -39,6 +40,7 @@ function WorkExperience() {
     <section>
       <div>
       </div>
+      <Scroll toSection="Education"/>
     </section>
   )
 }
