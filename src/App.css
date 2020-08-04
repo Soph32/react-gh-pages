@@ -18,6 +18,21 @@ h3 {
   width: 100%;
 }
 
+table {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+td {
+  color: #101820FF;
+  font-size: larger;
+  font-weight: bold;
+}
+
+img {
+  width: 3rem;
+}
+
 section {
   height: calc(100vh - 14em);
   padding: 7em;
@@ -113,6 +128,26 @@ img {
 
 #gh {
   width: 38px;
+}
+
+#ts-logo {
+  margin-left: -0.4rem;
+  width: 3.9rem;
+}
+
+#phoenix-logo {
+  margin-left: -0.4rem;
+  width: 4rem;
+}
+
+#appium-logo {
+  margin-left: -0.4rem;
+  width: 4rem;
+}
+
+#gh-logo {
+  margin-left: -0.4rem;
+  width: 3.8rem;
 }
 
 /* 
