@@ -1,5 +1,6 @@
 import React from 'react';
 import Scroll from './scroll';
+import Links from './links';
 import './App.css';
 
 function Homepage() {
@@ -16,6 +17,7 @@ function Homepage() {
 function MainText() {
   return (
     <section>
+      <Links />
       <div  className="main-text">
         <h1 className="hi">Hi, I'm</h1>
         <h1 className="name">Sophie</h1>

@@ -60,11 +60,7 @@ section:nth-of-type(4) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 9rem;
-  /* margin: auto;
-  margin-top: 150px;
-  text-align: center;
-  width: 400px; */
+  margin-top: 13rem;
 }
 
 .hi {
@@ -83,6 +79,17 @@ section:nth-of-type(4) {
   font-family: "Courier New", Courier, monospace;
 }
 
+img {
+  padding: 10px;
+}
+
+.img-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6rem;
+}
+
 #skills {
   color: #101820FF;
 }
@@ -93,6 +100,19 @@ section:nth-of-type(4) {
 
 #education {
   color: #101820FF;
+}
+
+#tw {
+  width: 30px;
+  margin-left: 5px;
+}
+
+#wp {
+  width: 22px;
+}
+
+#gh {
+  width: 38px;
 }
 
 /* 
