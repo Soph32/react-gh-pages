@@ -30,7 +30,12 @@ td {
 }
 
 img {
+  padding: 10px;
   width: 3rem;
+}
+
+td img {
+ filter: drop-shadow(5px 5px 5px #222);
 }
 
 section {
@@ -92,10 +97,6 @@ section:nth-of-type(4) {
 
 .code {
   font-family: "Courier New", Courier, monospace;
-}
-
-img {
-  padding: 10px;
 }
 
 .img-links {
@@ -176,9 +177,54 @@ Animations
 Screen size changes
 */
 
+@media only screen and (max-width: 1000px) {
+  table {
+    margin-top: -2rem;
+    margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  td {    
+    font-size: medium;
+  }
+
+  td img {
+    width: 1.5rem;
+  }
+
+  #ts-logo {
+    margin-left: -0.4rem;
+    width: 2rem;
+  }
+  
+  #phoenix-logo {
+    margin-left: -0.4rem;
+    width: 2.5rem;
+  }
+  
+  #appium-logo {
+    margin-left: -0.4rem;
+    width: 2rem;
+  }
+  
+  #gh-logo {
+    margin-left: -0.4rem;
+    width: 2.5rem;
+  }
+}
+
 @media only screen and (max-width: 560px) {
   .main-text {
     width: 320px;
+  }
+
+  table {
+    margin-left: -4.5rem;
+  }
+
+  td {    
+    font-size: small;
   }
 }
 
@@ -190,11 +236,28 @@ Screen size changes
   .main-text {
     margin-left: -3.5rem;
   }
+
+  table {
+    margin-top: 5em;
+    margin-left: -11rem;
+    transform: rotate(90deg);
+  }
+
+  td {
+    font-size: xx-small;
+    padding: 0.5rem;
+    text-align: center;
+    transform: rotate(-90deg);
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .main-text {
     margin-left: -4.8rem;
+  }
+
+  table {
+    margin-left: -11.5rem;
   }
 }
 
@@ -206,14 +269,14 @@ Screen size changes
   .main-text {
     margin-left: -6.5rem;
   }
-}
 
-@media only screen and (max-width: 330px) {
-  h1 {
-    font-size: 1.7rem;
+  table {
+    margin-left: -11rem;
   }
 
-  .main-text {
-    margin-left: -8rem;
+  td {
+    font-size: xx-small;
+    padding: 0.2rem;
+    text-align: center;
   }
 }

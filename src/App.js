@@ -1,7 +1,7 @@
 import React from 'react';
 import Scroll from './scroll';
 import Links from './links';
-import {AndroidStudio, Appium, Apple, Css, Elixir, Git, Github, Html, Java, Js, Perl, Phoenix, Php, Postgres, Python, ReactLogo, Redux, Ruby, Selenium, Swift, Tfs, Typescript, Windows, Xcode} from './images';
+import {AndroidStudio, Appium, Apple, Css, Elixir, Git, Github, Html, Java, Js, Perl, Phoenix, Postgres, Python, ReactLogo, Redux, Ruby, Selenium, Tfs, Typescript, Windows, Xcode} from './images';
 import './App.css';
 
 function Homepage() {
@@ -46,7 +46,6 @@ function Skills() {
         <tr>
           <td>Back-End</td>
           <td><img src={Elixir} alt="elixir logo"></img></td>
-          <td><img src={Php} alt="php logo"></img></td>
           <td><img src={Postgres} alt="postgresql logo"></img></td>
         </tr>
         <tr>
@@ -55,7 +54,6 @@ function Skills() {
           <td><img src={Python} alt="python logo"></img></td>
           <td><img src={Java} alt="java logo"></img></td>
           <td><img src={Perl} alt="perl logo"></img></td>
-          <td><img src={Swift} alt="swift logo"></img></td>          
         </tr>
         <tr>
           <td>Automation</td>
