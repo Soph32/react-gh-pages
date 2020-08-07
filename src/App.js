@@ -37,40 +37,40 @@ function Skills() {
       <table>
         <tr>
           <td>Front-End</td>
-          <td><img src={ReactLogo} alt="react logo"></img></td>
-          <td><img src={Redux} alt="redux logo"></img></td>
-          <td><img src={Html} alt="html logo"></img></td>
-          <td><img src={Css} alt="css logo"></img></td>
-          <td><img src={Js} alt="javascript logo"></img></td>
-          <td><img id="ts-logo" src={Typescript} alt="typescript logo"></img></td>
-          <td><img id="phoenix-logo" src={Phoenix} alt="phoenix logo"></img></td>
+          <td><a href="https://reactjs.org/"><img src={ReactLogo} alt="react logo"></img></a></td>
+          <td><a href="https://redux.js.org/"><img src={Redux} alt="redux logo"></img></a></td>
+          <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src={Html} alt="html logo"></img></a></td>
+          <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src={Css} alt="css logo"></img></a></td>
+          <td><a href="https://www.javascript.com/"><img src={Js} alt="javascript logo"></img></a></td>
+          <td><a href="https://www.typescriptlang.org/"><img id="ts-logo" src={Typescript} alt="typescript logo"></img></a></td>
+          <td><a href="https://phoenixframework.org/"><img id="phoenix-logo" src={Phoenix} alt="phoenix logo"></img></a></td>
         </tr>
         <tr>
           <td>Back-End</td>
-          <td><img src={Elixir} alt="elixir logo"></img></td>
-          <td><img src={Postgres} alt="postgresql logo"></img></td>
+          <td><a href="https://elixir-lang.org/"><img src={Elixir} alt="elixir logo"></img></a></td>
+          <td><a href="https://www.postgresql.org/"><img src={Postgres} alt="postgresql logo"></img></a></td>
         </tr>
         <tr>
           <td>Languages</td>
-          <td><img src={Ruby} alt="ruby logo"></img></td>
-          <td><img src={Python} alt="python logo"></img></td>
-          <td><img src={Java} alt="java logo"></img></td>
-          <td><img src={Perl} alt="perl logo"></img></td>
+          <td><a href="https://www.ruby-lang.org/en/"><img src={Ruby} alt="ruby logo"></img></a></td>
+          <td><a href="https://www.python.org/"><img src={Python} alt="python logo"></img></a></td>
+          <td><a href="https://docs.oracle.com/en/database/oracle/oracle-database/12.2/jjdev/Java-overview.html#GUID-17B81887-C338-4489-924D-FDDF2468DEA7"><img src={Java} alt="java logo"></img></a></td>
+          <td><a href="https://www.perl.org/"><img src={Perl} alt="perl logo"></img></a></td>
         </tr>
         <tr>
           <td>Automation</td>
-          <td><img id="appium-logo" src={Appium} alt="appium logo"></img></td>
-          <td><img src={Selenium} alt="selenium logo"></img></td>
+          <td><a href="http://appium.io/"><img id="appium-logo" src={Appium} alt="appium logo"></img></a></td>
+          <td><a href="https://www.selenium.dev/documentation/en/getting_started_with_webdriver/"><img src={Selenium} alt="selenium logo"></img></a></td>
         </tr>
         <tr>
           <td>Misc</td>
-          <td><img src={Git} alt="git logo"></img></td>
-          <td><img id="gh-logo" src={Github} alt="github logo"></img></td>
-          <td><img src={Tfs} alt="team foundation server logo"></img></td>
-          <td><img src={AndroidStudio} alt="android studio logo"></img></td>
-          <td><img src={Xcode} alt="xcode logo"></img></td>
-          <td><img src={Windows} alt="windows logo"></img></td>
-          <td><img src={Apple} alt="apple logo"></img></td>
+          <td><a href="https://git-scm.com/"><img src={Git} alt="git logo"></img></a></td>
+          <td><a href="https://github.com/"><img id="gh-logo" src={Github} alt="github logo"></img></a></td>
+          <td><a href="https://docs.microsoft.com/en-gb/azure/devops/server/admin/admin-quick-ref?view=azure-devops-2020&viewFallbackFrom=azure-devops"><img src={Tfs} alt="team foundation server logo"></img></a></td>
+          <td><a href="https://developer.android.com/studio"><img src={AndroidStudio} alt="android studio logo"></img></a></td>
+          <td><a href="https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/"><img src={Xcode} alt="xcode logo"></img></a></td>
+          <td><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands"><img src={Windows} alt="windows logo"></img></a></td>
+          <td><a href="https://support.apple.com/en-gb/guide/terminal/welcome/mac"><img src={Apple} alt="apple logo"></img></a></td>
         </tr>
       </table>
       <Scroll toSection="Experience"/>
@@ -80,7 +80,7 @@ function Skills() {
 
 function Experience() {
   const abcWorkData = {
-    series: [60, 20, 10, 5, 5],
+    series: [30, 25, 20, 15, 5, 5],
     options: {
       chart: {
         width: 500,
@@ -103,7 +103,7 @@ function Experience() {
       legend: {
         position: "bottom",
       },
-      labels: ['Automation', 'App Development', "Updates and Maintenance", "Research", "Digital Audit"],
+      labels: ["Codebase Maintenance", "Feature Development", "Automation", "App Development", "Research", "Digital Audit"],
       responsive: [
         {
           breakpoint: 2000,
