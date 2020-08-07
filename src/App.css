@@ -76,6 +76,11 @@ section:nth-of-type(4) {
   margin-bottom: 2rem;
 }
 
+.exp-years {
+  margin-top: -1rem;
+  position: relative;
+}
+
 .main-text {
   display: flex;
   justify-content: center;
@@ -104,6 +109,20 @@ section:nth-of-type(4) {
   justify-content: center;
   align-items: center;
   margin-top: -6rem;
+}
+
+.charts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -5rem;
+  margin-top: 3rem;
+}
+
+.chart {
+  margin-left: 5rem;
+  text-align: center;
+  color: #A59C94FF;
 }
 
 #skills {
@@ -184,6 +203,12 @@ Screen size changes
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .ambrit {
+    margin-top: -2rem;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   td {    
     font-size: medium;
@@ -191,6 +216,18 @@ Screen size changes
 
   td img {
     width: 1.5rem;
+  }
+
+  h2 {
+    font-size: large;
+  }
+
+  .charts {
+    margin-left: 1rem;
+  }
+
+  .chart {
+    margin-left: 1rem;
   }
 
   #ts-logo {
@@ -249,6 +286,22 @@ Screen size changes
     text-align: center;
     transform: rotate(-90deg);
   }
+
+  .charts {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-left: 0rem;
+    margin-top: -2rem;
+  }
+
+  .ambrit {
+    margin-top: 1.5rem;
+  }  
+
+  .amb-pie {
+    margin-left: 1rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -258,6 +311,14 @@ Screen size changes
 
   table {
     margin-left: -11.5rem;
+  }
+
+  h2 {
+    font-size: medium;
+  }
+
+  .charts {
+    margin-left: 1.5rem;
   }
 }
 
@@ -278,5 +339,9 @@ Screen size changes
     font-size: xx-small;
     padding: 0.2rem;
     text-align: center;
+  }
+
+  .charts {
+    margin-left: 2rem;
   }
 }

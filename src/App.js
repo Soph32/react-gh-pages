@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import Scroll from './scroll';
 import Links from './links';
+import Chart from 'react-apexcharts';
 import {AndroidStudio, Appium, Apple, Css, Elixir, Git, Github, Html, Java, Js, Perl, Phoenix, Postgres, Python, ReactLogo, Redux, Ruby, Selenium, Tfs, Typescript, Windows, Xcode} from './images';
 import './App.css';
+import ReactApexChart from 'react-apexcharts';
 
 function Homepage() {
   return (
@@ -77,9 +79,173 @@ function Skills() {
 }
 
 function Experience() {
+  const abcWorkData = {
+    series: [60, 20, 10, 5, 5],
+    options: {
+      chart: {
+        width: 500,
+        type: 'pie',
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 700,
+        },
+      },
+      stroke: {
+        colors: ['#101820'],
+      },
+      theme: {
+        palette: 'palette4'
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      legend: {
+        position: "bottom",
+      },
+      labels: ['Automation', 'App Development', "Updates and Maintenance", "Research", "Digital Audit"],
+      responsive: [
+        {
+          breakpoint: 2000,
+          options: {
+            chart: {
+              width: 530
+            },
+            legend: {
+              fontSize: '14px'
+            }
+          }
+        },
+        {
+          breakpoint: 900,
+          options: {
+            chart: {
+              width: 380
+            },
+          }
+        },
+        {
+          breakpoint: 590,
+          options: {
+            chart: {
+              width: 380
+            },
+            legend: {
+              fontSize: '10px'
+            }
+          }
+        },
+        {
+          breakpoint: 380,
+          options: {
+            chart: {
+              width: 300
+            },
+          }
+        },
+        {
+          breakpoint: 330,
+          options: {
+            chart: {
+              width: 240
+            },
+          }
+        }
+      ]
+    },
+  };
+
+  const ambWorkData = {
+    series: [80, 20],
+    options: {
+      chart: {
+        width: 500,
+        type: 'pie',
+        animations: {
+          enabled: true,
+          easing: 'easeinout',
+          speed: 700,
+        }
+      },
+      stroke: {
+        colors: ['#101820'],
+      },
+      theme: {
+        palette: 'palette4'
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      legend: {
+        position: "bottom",
+      },
+      labels: ['Front-End', 'Back-End'],
+      responsive: [
+        {
+          breakpoint: 2000,
+          options: {
+            chart: {
+              width: 500
+            },
+            legend: {
+              fontSize: '14px'
+            }
+          }
+        },
+        {
+          breakpoint: 900,
+          options: {
+            chart: {
+              width: 350
+            },
+          }
+        },
+        {
+          breakpoint: 590,
+          options: {
+            chart: {
+              width: 350
+            },
+          },
+          legend: {
+            fontSize: '10px'
+          }
+        },
+        {
+          breakpoint: 380,
+          options: {
+            chart: {
+              width: 260
+            },
+          }
+        },
+        {
+          breakpoint: 330,
+          options: {
+            chart: {
+              width: 200
+            },
+          }
+        }
+      ]
+    },
+  };
+
   return (
     <section>
       <h1 className="section-title" id="experience">Experience</h1>
+      <div className="charts">
+        <div className="chart">
+          <h2>Audit Bureau of Circulations</h2>
+          <h3 className="exp-years">2014-2020</h3>
+          <ReactApexChart className="abc-pie" options={abcWorkData.options} series={abcWorkData.series} type="pie" width={500} />
+        </div>  
+        <div className="chart ambrit">
+          <h2>Ambrit</h2>
+          <h3 className="exp-years">2020</h3> 
+          <ReactApexChart className="amb-pie" options={ambWorkData.options} series={ambWorkData.series} type="pie" width={500} />
+        </div>
+      </div>
       <Scroll toSection="Education"/>
     </section>
   )
