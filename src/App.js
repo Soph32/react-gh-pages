@@ -1,7 +1,6 @@
-import React, {useRef, useEffect} from 'react';
+import React, { useState } from 'react';
 import Scroll from './scroll';
 import Links from './links';
-import Chart from 'react-apexcharts';
 import {AndroidStudio, Appium, Apple, Css, Elixir, Git, Github, Html, Java, Js, Perl, Phoenix, Postgres, Python, ReactLogo, Redux, Ruby, Selenium, Tfs, Typescript, Windows, Xcode} from './images';
 import './App.css';
 import ReactApexChart from 'react-apexcharts';
@@ -12,22 +11,42 @@ function Homepage() {
       <MainText />
       <Skills />
       <Experience />
-      <Education />
+      {/* <Qualifications /> */}
     </div>
   );
 }
 
 function MainText() {
+  const [show, setShow] = useState(false);
+
   return (
     <section>
       <Links />
-      <div  className="main-text">
-        <h1 className="hi">Hi, I'm</h1>
-        <h1 className="name">Sophie</h1>
+      <div className={show ? "title-container" : null}>
+        <div  className="main-text">
+          <h1 className="hi">Hi, I'm</h1>
+          <h1 className="name">Sophie</h1>
+        </div>
       </div>
+      <div className="button"><button className={show ? "hide-button" : null} onClick={() => setShow(true)}>About Me</button></div> 
+      <AboutMe show={show}/>
       <Scroll toSection="Skills"/>
     </section>
   )
+}
+
+function AboutMe(props) {
+  if (props.show) {
+    return (
+        <div className="about-me">
+          I love creating things and am passionate about building software that makes a difference.
+          <br/><br/>I have over <span id="important-text">6 years of professional experience</span> in the tech world with all kinds of languages and environments and now I'm ready to focus on <span id="important-text">front-end development</span>.
+          <br/><br/>Please see links above to my <span id="important-text">GitHub</span> and <span id="important-text">blog</span> and please feel free to reach out on <span id="important-text">Twitter</span>!
+        </div>
+    );
+  } else {
+    return null;
+  }
 }
 
 function Skills() {
@@ -251,12 +270,12 @@ function Experience() {
   )
 }
 
-function Education() {
-  return (
-    <section>
-      <h1 className="section-title" id="education">Education</h1>
-    </section>
-  )
-}
+// function Qualifications() {
+//   return (
+//     <section>
+//       <h1 className="section-title" id="education">Education</h1>
+//     </section>
+//   )
+// }
 
 export default Homepage;

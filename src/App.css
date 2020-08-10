@@ -3,6 +3,19 @@ body {
   overflow: hidden;
 }
 
+button {
+  background-color: #101820FF;
+  border: 1px solid #AE0E36FF;
+  color: #AE0E36FF;
+  font-size: 1rem;
+  height: 2rem;
+  width: 7rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 h1 {
   color: #A59C94FF;
   font-size: 3rem;
@@ -76,6 +89,13 @@ section:nth-of-type(4) {
   margin-bottom: 2rem;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+}
+
 .exp-years {
   margin-top: -1rem;
   position: relative;
@@ -86,6 +106,16 @@ section:nth-of-type(4) {
   justify-content: center;
   align-items: center;
   margin-top: 13rem;
+}
+
+.hide-button {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.title-container {
+  animation: 1s ease-out 0.7s 1 slideUp;
+  animation-fill-mode: forwards;
 }
 
 .hi {
@@ -123,6 +153,22 @@ section:nth-of-type(4) {
   margin-left: 5rem;
   text-align: center;
   color: #A59C94FF;
+}
+
+.about-me {
+  align-items: center;
+  color: #A59C94FF;
+  display: flexbox;
+  font-size: large;
+  justify-content: center;
+  opacity: 0;
+  text-align: center;
+  animation: 1s ease-in 1.5s 1 fadeIn;
+  animation-fill-mode: forwards;
+}
+
+#important-text {
+  color: #AE0E36FF;
 }
 
 #skills {
@@ -189,6 +235,22 @@ Animations
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  100% {
+    margin-top: -10rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
